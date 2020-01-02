@@ -1,0 +1,130 @@
+.card {
+    width: 44%;
+    border: white 3px solid;
+    margin: 5px 2px;
+    background-color: #f8f5e4;
+    position: relative;
+    border-radius: 8px;
+}
+
+.card .content-title {
+    background-color: #eaaa2e;
+    width: 100%;
+    border-bottom: #1d212d 3px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card .content-title h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card img {
+    width: 28.7%;
+    position: relative;
+    left: 35%;
+    top: 11%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+.card .content-text {
+    background-color: #eaaa2e;
+    width: 100%;
+    border-top: #1d212d 4px solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card .content-text p {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+/* DETAIL */
+
+.card-detail {
+    border: white 2px solid;
+    width: 90%;
+}
+
+.container-detail {
+    border: white 2px dotted;
+    width: 88%;
+    padding: 12px;
+    margin: 5px auto;
+    color:white;
+}
+
+.container-detail .detail-title {
+    background-color: #eaaa2e;
+    width: 100%;
+    border-bottom: #1d212d 3px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container-detail .detail-title h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color:black;
+}
+
+.container-detail img {
+    background-color: #f8f5e4;
+    width: 32%;
+    position: relative;
+    left: 0;
+    padding: 4% 34.3%;
+    border-radius: 10px;
+    top: 11%;
+}
+
+.container-detail .detail-text h3 {
+    font-weight: bold;
+    margin: 0.4rem 0;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.container-detail .date-text {
+    background-color: #eaaa2e;
+    width: 100%;
+    border-bottom: #1d212d 3px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 14px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container-detail .date-text h3{
+    font-weight: bold;
+    margin: 0.4rem 0;
+    font-size: 1.1rem;
+    padding: 18px 8px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.container-detail .detail-text p {
+    font-size: 1.1rem;
+    line-height: 134%;
+    padding: 7px;
+    margin: 11px 0;
+}
+
+hr.separador {
+    border: white 1px dotted;
+}

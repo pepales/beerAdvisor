@@ -1,0 +1,19 @@
+@import "navbar.css";
+@import "cards.css";
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+body {
+    background-color: #1d212d;
+}
+
+h1,h2,h3,p {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+main {
+    margin-top:220px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

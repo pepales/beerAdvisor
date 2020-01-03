@@ -52,13 +52,12 @@
 /* DETAIL */
 
 .card-detail {
-    border: white 2px solid;
+    /* border: white 2px solid; */
     width: 90%;
 }
 
 .container-detail {
     border: white 2px dotted;
-    width: 88%;
     padding: 12px;
     margin: 5px auto;
     color:white;

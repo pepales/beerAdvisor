@@ -13,7 +13,11 @@ h1,h2,h3,p {
 
 main {
     margin:20px auto;
-    display:flex;
+}
+
+
+.container {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;

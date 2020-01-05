@@ -1,6 +1,5 @@
 import { toggle, toggleClass } from './ui.js';
 
-
 const navbar = document.querySelector('.filter-container');
 const openSearch = document.querySelector('#navbar-search');
 const closeSearch = document.querySelector('#navbar-close');
@@ -9,7 +8,6 @@ const darkScreen = document.querySelector('#modal-container')
 const handleNavBar = toggle(navbar)
 const beerIcon = toggle(openSearch)
 const crossIcon = toggle(closeSearch)
-
 
 openSearch.addEventListener('click', () => {
   handleNavBar('hide','show')

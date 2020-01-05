@@ -14,12 +14,24 @@ h1,h2,h3,p {
 
 main {
     margin:20px auto;
+    
 }
-
 
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+a {
+    color: initial;
+    text-decoration: none;
+  }
+
+.warning {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 44px;
 }

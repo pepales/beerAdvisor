@@ -22,7 +22,9 @@
               required
               placeholder="search by text"
               class="input search"
+              name="filter"
               type="text"
+              id="filter"
             />
         </div>
         <div class="input-row">
@@ -31,10 +33,12 @@
               required
               placeholder="search by year"
               class="input search"
+              name="year"
               type="text"
+              id="year"
             />
         </div>
-          <!-- <button type="submit" class="button search">Search</button> -->
+          <button type="submit" class="button search hide">Search</button>
         </form>
       </div>
       <div class="navbar-icon">
@@ -42,9 +46,10 @@
         <div id="navbar-close" class="beer-icon hide"><img src="/img/icons/delete.png"/></div>
       </div>
     </nav>
+    <div id="modal-container"></div>
     <main>
-      <div id="modal-container"></div>
-      <div class="container">
+      <!-- <div id="modal-container"></div>
+      <div class="container"> -->
         <!-- CARD -->
         <!-- <div class="card">
             <div class="content-title">
@@ -58,15 +63,8 @@
         </div>    -->
         <!-- END CARD -->
         <!-- DETAIL -->
-        <div id="loader" class="loader-container hide">
-          <p>Loading...</p>
-          <span class="loader">  
-              <span class="loader-inner">
-              </span>
-          </span>
-          <span class="handle"></span>
-        </div>
-        <div class="card-detail">
+        
+        <!-- <div class="card-detail">
             <div class="container-detail">
                 <div class="detail-title">
                     <h2>● Beer ●</h2>
@@ -116,12 +114,22 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- END DETAIL -->
-      </div>
+      <!-- </div> -->
     </main>
-    
+    <!-- LOADER -->
+    <div id="loader" class="loader-container hide">
+      <p>Loading...</p>
+      <span class="loader">  
+          <span class="loader-inner">
+          </span>
+      </span>
+      <span class="handle"></span>
+    </div>
+    <!-- LOADER END -->
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script type="module" src="js/navbar.js"></script>
+    <script type="module" src="js/routes.js"></script>
   </body>
 </html>

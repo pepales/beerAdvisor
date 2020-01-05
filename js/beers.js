@@ -2,7 +2,7 @@ import { renderLoader } from "./ui.js";
 import api from "./api.js";
 
 const templateBeer = ({ beerId, name, image, firstBrewed, likes }) => `    
-    <a href="/detail/${beerId}">
+    <a id="beer" href="/detail/${beerId}">
         <div class="card">
             <div class="content-title">
                 <h2>● ${name} ●</h2>

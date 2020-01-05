@@ -1,6 +1,9 @@
 import { toggle, toggleClass } from './ui.js';
 import { renderBeersDOM } from './beers.js';
+import storage from './storage.js';
 
+
+const { setItem, getItem } = storage();
 
 const navbar = document.querySelector('.filter-container');
 const openSearch = document.querySelector('#navbar-search');
@@ -9,6 +12,9 @@ const darkScreen = document.querySelector('#modal-container');
 const searchForm = document.getElementById('search-form');
 const filter = document.getElementById('filter');
 const year = document.getElementById('year');
+
+filter.value = getItem('filter-text');
+  year.value = getItem('filter-year');
 
 const handleNavBar = toggle(navbar)
 const beerIcon = toggle(openSearch)
@@ -33,4 +39,6 @@ searchForm.addEventListener('submit', evt => {
     // render shows
     // setItem('navbar-input', searchInput.value);
     renderBeersDOM(year.value,filter.value);
+    setItem('filter-text', filter.value);
+    setItem('filter-year', year.value);
 });

@@ -34,11 +34,7 @@ closeSearch.addEventListener('click', () => {
 
 searchForm.addEventListener('submit', evt => {
   evt.preventDefault();
-  console.log(filter.value);
-  console.log(year.value);
-    // render shows
-    // setItem('navbar-input', searchInput.value);
-    renderBeersDOM(year.value,filter.value);
-    setItem('filter-text', filter.value);
-    setItem('filter-year', year.value);
+  renderBeersDOM(year.value,filter.value);
+  setItem('filter-text', filter.value);
+  setItem('filter-year', year.value);
 });

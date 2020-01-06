@@ -1,5 +1,7 @@
 import { renderLoader } from "./ui.js";
 import api from "./api.js";
+import {removeCommentsList} from './beercomments.js';
+
 
 const templateBeer = ({ beerId, name, image, firstBrewed, likes }) => `    
     <a id="beer" href="/detail/${beerId}">
@@ -36,6 +38,7 @@ const { getBeers } = api();
 const renderBeersDOM = async (date, text) => {
   try {
     renderLoader("hide", "show");
+    removeCommentsList();
     console.log(date);
     const mainSection = document.querySelector("main");
     const beers = await getBeers(text);
@@ -64,4 +67,4 @@ const renderBeersDOM = async (date, text) => {
   }
 };
 
-export { renderBeersDOM };
+export {renderBeersDOM};

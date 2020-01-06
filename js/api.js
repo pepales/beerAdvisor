@@ -47,7 +47,48 @@ const api = (API_URL_DEFAULT = `${API_URL}beers?limit=${LIMIT_FILTER}`) => {
                 console.error(err.message);
                 throw err;
             }
-        }
+        },
+        getBeerComments: async text => {
+            try {
+                const requestUrl = `${API_URL}beers/${text}`;
+                const response = await fetch(requestUrl, {
+                    method: 'GET',
+                    headers: {
+                        'Content-type': 'application/json',
+                        'X-API-KEY': API_KEY,
+                    },
+                });
+                    
+                if (!response.ok) {
+                    throw new Error('Error fetching beer ID');
+                }
+                const data = await response.json();
+                return data.beer;
+            } catch (err) {
+                console.error(err.message);
+                throw err;
+            }
+        },
+        createBeerComment: async (id, text) => {
+            try {
+              const response = await fetch(`${API_URL}beers/${id}/comment`, {
+                method: 'POST',
+                body: JSON.stringify({ comment:text }),
+                headers: {
+                  'Content-type': 'application/json',
+                  'X-API-KEY': API_KEY,
+                },
+              });
+              if (!response.ok) {
+                throw new Error('Error creating comment');
+              }
+              const data = await response.json();
+              return data;
+            } catch (err) {
+              console.error(err);
+              throw err;
+            }
+        },
     }
 }
 

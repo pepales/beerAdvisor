@@ -1,7 +1,9 @@
 import api from './api.js';
 import { renderLoader } from "./ui.js";
+import { addLikeListener } from "./beercomments.js";
 
 const { getBeerID } = api();
+
 
 const detailBeerTemplate = ({beerId, name, image, firstBrewed, likes, contributedBy , description, brewersTips }) => `
 <div class="container">
@@ -14,7 +16,15 @@ const detailBeerTemplate = ({beerId, name, image, firstBrewed, likes, contribute
             
             <div class="date-text">
                 <h3>First Brewed: ${firstBrewed}</h3>
-                <h3>Likes: ${likes}</h3>
+                <h3>
+                    <button class="add-like">
+                        Like 
+                        <i class="fas fa-heart"></i>
+                        
+                    </button>
+                    
+                </h3>
+                <h3 id="like-counter">${likes}</h3>
             </div>
             <div class="detail-text">
                 <h3>Contributed by:</h3>
@@ -42,6 +52,7 @@ const renderBeerDetail = async id => {
         const selector = document.querySelector('main');
         const beer = await getBeerID(id);
         selector.innerHTML = detailBeerTemplate(beer);
+        addLikeListener(id);
     } catch (err) {
         console.error(err);
     } finally {

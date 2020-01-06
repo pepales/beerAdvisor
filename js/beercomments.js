@@ -3,6 +3,24 @@ import { renderLoader } from "./ui.js";
 
 const { getBeerComments } = api();
 const { createBeerComment } = api();
+const { addBeerLike } = api();
+
+const addLikeListener = async id => {
+    const button = document.querySelector('.add-like');
+    const counter = document.querySelector('#like-counter');
+    button.addEventListener('click', async evt => {
+        try {
+            evt.preventDefault();
+            renderLoader("hide", "show");
+            await addBeerLike(id);
+            counter.innerHTML ++
+        } catch (err) {
+            console.error(err);
+        } finally {
+            renderLoader("show", "hide");
+        }
+    });
+};
 
 const commentBeerTemplate = (comment) => `
     <p class="comment-date">
@@ -146,4 +164,4 @@ const renderBeerComments = async id => {
 };
 
 
-export {renderBeerComments, removeCommentsList};
+export {renderBeerComments, removeCommentsList, addLikeListener };

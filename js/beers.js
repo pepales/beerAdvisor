@@ -12,7 +12,10 @@ const templateBeer = ({ beerId, name, image, firstBrewed, likes }) => `
             <img src="${image}" />
             <div class="content-text">
                 <p>${firstBrewed}</p>
-                <p>Likes: ${likes}</p>
+                <p>
+                  <i class="fas fa-heart"></i>
+                  ${likes}
+              </p>
             </div>
         </div>
     </a>
@@ -39,21 +42,16 @@ const renderBeersDOM = async (date, text) => {
   try {
     renderLoader("hide", "show");
     removeCommentsList();
-    console.log(date);
     const mainSection = document.querySelector("main");
     const beers = await getBeers(text);
     renderBeers(mainSection, beers);
     if (date) {
-      console.log("ENTRA ");
       const filterBeers = beers.filter(
         beer => beer.firstBrewed.split("/")[1] === date
       );
-      console.log(filterBeers);
       if (filterBeers.length === 0) {
-        console.log("NO RESULT");
         return renderNoResult(mainSection);
       } else {
-        console.log("HAY RESULTS");
         return renderBeers(mainSection, filterBeers);
       }
     }

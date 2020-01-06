@@ -20,7 +20,7 @@
 
 .card .content-title h2 {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: center;
     text-transform: uppercase;
 }
@@ -107,18 +107,19 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-bottom: 14px;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-.container-detail .date-text h3{
+.container-detail .date-text h3 {
     font-weight: bold;
     margin: 0.4rem 0;
     font-size: 1.1rem;
-    padding: 18px 8px;
+    padding: 18px 15px;
     text-transform: uppercase;
     color: black;
+
 }
 
 .container-detail .detail-text p {
@@ -130,4 +131,16 @@
 
 hr.separador {
     border: white 1px dotted;
+}
+
+.content-text button {
+    border:none;
+    background-color: transparent;
+    
+}
+
+.add-like {
+    font-size: 1rem;
+    width: 20vw;
+    height: 8vw;
 }

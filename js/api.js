@@ -89,6 +89,25 @@ const api = (API_URL_DEFAULT = `${API_URL}beers?limit=${LIMIT_FILTER}`) => {
               throw err;
             }
         },
+        addBeerLike: async (id, text) => {
+            try {
+              const response = await fetch(`${API_URL}beers/${id}/like`, {
+                method: 'POST',
+                headers: {
+                  'Content-type': 'application/json',
+                  'X-API-KEY': API_KEY,
+                },
+              });
+              if (!response.ok) {
+                throw new Error('Error adding like');
+              }
+              const data = await response.json();
+              return data;
+            } catch (err) {
+              console.error(err);
+              throw err;
+            }
+        }
     }
 }
 

@@ -2,24 +2,24 @@
     border: 6px solid #FBFBFB;
     border-top-right-radius: 9px;
     border-bottom-right-radius: 9px;
-    height: 5%;
-    top: 53%;
-    left: 59.7%;
+    height: 45px;
+    top: 65%;
+    left: 77%;
     position: absolute;
-    width: 4%;
+    width: 10px;
 }
 
 .loader {
     display: inline-block;
-    width: 14%;
-    height: 10%;
-    left: 44%;
+    width: 60px;
+    height: 90px;
+    left: 43%;
     border-top-right-radius: 9px;
     border-top-left-radius: 9px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     top: 50%;
-    position: relative;
+    position: absolute;
     border: 6px solid #FBFBFB;
     transform: rotate(180deg);
 }
@@ -37,8 +37,8 @@
     position: absolute;
     color: white;
     font-size: 1.5rem;
-    left: 41.7%;
-    top: 62.6%;
+    left: 38.7%;
+    top: 105.6%;
 }
 
 .loader-inner {
@@ -48,6 +48,8 @@
   background-color: #eaaa2e;
   animation: loader-inner 3s infinite ease-in;
 }
+
+
 
 
 @keyframes loader-inner {
@@ -70,4 +72,60 @@
   100% {
     height: 0%;
   }
+}
+
+@media (max-width:990px) {
+  .group {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top:35%;
+  }
+}
+
+@media (min-width:992px) {
+
+
+    .group {
+      width:500px;
+      margin: 0 auto;
+    }
+
+    .loader {
+      display: inline-block;
+      width: 60px;
+      height: 90px;
+      left: 47%;
+      border-top-right-radius: 9px;
+      border-top-left-radius: 9px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      top: 320px;
+      position: relative;
+      border: 6px solid #FBFBFB;
+      transform: rotate(180deg);
+      margin: 0 auto;
+    }
+
+    .handle {
+      border: 6px solid #FBFBFB;
+      border-top-right-radius: 9px;
+      border-bottom-right-radius: 9px;
+      height: 45px;
+      top: 391px;
+      left: 45%;
+      position: relative;
+      width: 10px;
+      display: inline-block;
+    }
+
+    .loader-container p {
+      position: relative;
+      color: white;
+      font-size: 1.5rem;
+      left: 46%;
+      top: 494px;
+    }
+
 }

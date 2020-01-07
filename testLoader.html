@@ -1,0 +1,95 @@
+<style>
+.loader {
+        display: inline-block;
+        width: 60px;
+        height: 90px;
+        left: 200px;
+        border-top-right-radius: 9px;
+        border-top-left-radius: 9px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        top: 160px;
+        position: relative;
+        border: 6px solid #FBFBFB;
+        transform: rotate(180deg);
+        margin: 0 auto;
+    }
+
+    .handle {
+      border: 6px solid #FBFBFB;
+      border-top-right-radius: 9px;
+      border-bottom-right-radius: 9px;
+      height: 45px;
+      top: 241px;
+      left: 190px;
+      position: relative;
+      width: 10px;
+      display: inline-block;
+    }
+
+    .group-container {
+      margin: 225px auto;
+      width: 450px;
+      height: 450px;
+    }
+
+.loader-container {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+}
+
+.loader-container p {
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    left: 41.7%;
+    top: 62.6%;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #eaaa2e;
+  animation: loader-inner 3s infinite ease-in;
+}
+
+
+@keyframes loader-inner {
+  0% {
+    height: 100%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 0%;
+  }
+  
+  75% {
+    height: 0%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}
+</style>
+
+
+<div id="loader" class="loader-container">
+    <div class="group-container">
+        <p>Loading...</p>
+        <span class="loader">  
+            <span class="loader-inner">
+            </span>
+        </span>
+        <span class="handle"></span>
+    </div>
+  </div>

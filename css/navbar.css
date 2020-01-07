@@ -1,39 +1,23 @@
 nav {
     background-color: #1d212d;
-    width:100%;
+    width: 100%;
 }
 
-.logo {
-    padding-left: 6px;
-    padding-top: 9px;
-    height: 56px;
-    background-color: #eaaa2e;
-    border-bottom: white 2px solid;
-}
-
-.logo h1{
-    color: white;
-    padding-top: 5px;
-    padding-left: 5px;
-    font-size: 2.2rem;
-    text-align: left;
-    font-family: 'Alfa Slab One', cursive;
-}
 
 /* .filter-container {
     display:flex;
 } */
 
 .filter-input {
-    text-align:center;
+    text-align: center;
 }
 
 .show {
-    display:block;
+    display: block;
 }
 
 .hide {
-    display:none;
+    display: none;
 }
 
 
@@ -46,14 +30,7 @@ nav {
 }
 
 .beer-icon img {
-    width:11vw;
-    cursor:pointer;
-}
-
-.navbar-icon {
-    position: absolute;
-    left: 80vw;
-    top: 1.7vw;
+    cursor: pointer;
 }
 
 .input {
@@ -67,26 +44,17 @@ input[type=text] {
     border: white 1px solid;
     border-radius: 11px;
     background-color: #f8f5e4;
-    color:black;
+    color: black;
     text-align: center;
 }
 
 input[type=text]:focus {
-    border:#eaaa2e 3px solid;
-    
+    border: #eaaa2e 3px solid;
+
 }
 
 .input-row {
-    margin:20px auto;
-}
-
-.button {
-    width: 93px;
-    position: absolute;
-    top: 79.5px;
-    left: 313px;
-    height: 112.9px;
-    cursor:pointer;
+    margin: 20px auto;
 }
 
 .button-comment {
@@ -95,7 +63,7 @@ input[type=text]:focus {
     margin: 10px auto;
     cursor: pointer;
     background-color: #eaaa2e;
-    border:none;
+    border: none;
 }
 
 textarea {
@@ -107,121 +75,108 @@ textarea {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
-    margin:10px auto;
+    margin: 10px auto;
 }
 
 .comment-text {
-    color:black;
-    padding:5px;
+    color: black;
+    padding: 5px;
     background-color: #f8f8f8;
     border-radius: 5px;
 }
 
 .comment-date {
-    width:80%;
+    width: 80%;
     border-bottom: white 1px solid;
 }
 
-@media (max-width:990px) {
+@media(max-width:990px) {
     .button {
-        display:none;
+        display: none;
     }
-}
 
-@media (min-width: 992px) {
+    .logo {
+        padding-left: 6px;
+        padding-top: 9px;
+        height: 56px;
+        background-color: #eaaa2e;
+        border-bottom: white 2px solid;
+    }
 
     .beer-icon img {
-        width: 4.3vw;
+        width: 11vw;
         cursor: pointer;
-        left: 11vw;
-        position: absolute;
-        top: -0.6vw;
-    }
-
-    #filter {
-        position: relative;
-        left: -29vw;
-        top: 1vw;
-    }
-
-    #year {
-        position: relative;
-        left: -11vw;
-        top: -3vw;
-    }
-    
-
-    .input {
-        width: 17vw;
-        height: 4vw;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-
-    .input-row {
-        margin: 0;
-    }
-
-    .filter-container {
-        left: 70vw;
-        top: 0vw;
-        position: absolute;
-        width: 20vw;
-    }
-
-    .button {
-        width: 10vw;
-        position: absolute;
-        top: 1vw;
-        left: 9vw;
-        border-radius: 7px;
-        height: 4vw;
-        background-color: #1d212d;
-        color: white;
-        cursor: pointer;
-        border: none;
-    }
-}
-
-@media (min-width: 1100px) {
-
-    .beer-icon img {
-        width: 53px;
-        cursor: pointer;
-        left: 44%;
-        position: absolute;
-        top: 0%;
-    }
-
-    .button {
-        width: 10vw;
-        position: absolute;
-        top: 0.5vw;
-        left: 9vw;
-        border-radius: 7px;
-        height: 4vw;
-        background-color: #1d212d;
-        color: white;
-        cursor: pointer;
-        border: none;
-    }
-
-    #year {
-        position: relative;
-        left: -11vw;
-        top: -3.6vw;
-    }
-
-    #filter {
-        position: relative;
-        left: -29vw;
-        top: 0.4vw;
     }
 
     .navbar-icon {
         position: absolute;
-        left: 95%;
-        width: -11px;
-        top: 0.5%;
+        left: 80vw;
+        top: 1.7vw;
     }
+
+    .logo h1 {
+        color: white;
+        padding-top: 5px;
+        padding-left: 5px;
+        font-size: 2.2rem;
+        text-align: left;
+        font-family: 'Alfa Slab One', cursive;
+    }
+}
+
+@media(min-width: 992px) {
+
+    .filter-input {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input {
+        width: 200px;
+        height: 50px;
+        box-sizing: border-box;
+    }
+
+    .input-row {
+        margin: 5px;
+    }
+
+    .button {
+        width: 100px;
+        border-radius: 7px;
+        height: 50px;
+        background-color: #1d212d;
+        color: white;
+        cursor: pointer;
+        border: none;
+        margin: 5px;
+    }
+
+    nav {
+        width: 100%;
+        border-bottom: white 2px solid;
+        background-color: #eaaa2e;
+    }
+
+    .nav-container {
+        width: 900px;
+        padding: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .logo {
+        padding-bottom: 9px;
+    }
+
+    .logo h1 {
+        color: white;
+        padding-top: 12px;
+        font-size: 2.2rem;
+        text-align: left;
+        font-family: 'Alfa Slab One', cursive;
+    }
+
 }

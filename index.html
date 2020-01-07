@@ -11,117 +11,51 @@
   </head>
   <body>
     <nav>
-      <a href="/">
-        <div class="logo">
-          <h1>beerAdvisor</h1>
+      <div class="nav-container">
+            <a href="/">
+              <div class="logo">
+                <h1>beerAdvisor</h1>
+              </div>
+            </a>
+            <div class="filter-container hide">
+              <form id="search-form" class="filter-input" novalidate>
+                <div class="input-row">
+                  <input
+                    data-pattern-mismatch="Input invalid"
+                    required
+                    placeholder="search by text"
+                    class="input search"
+                    name="filter"
+                    type="text"
+                    id="filter"
+                  />
+              </div>
+              <div class="input-row">
+                  <input
+                    data-pattern-mismatch="Input invalid"
+                    required
+                    placeholder="search by year"
+                    class="input search"
+                    name="year"
+                    type="text"
+                    id="year"
+                  />
+              </div>
+                <button type="submit" class="button search">Search</button>
+              </form>
+            </div>
+            <div class="navbar-icon">
+              <div id="navbar-search" class="beer-icon"><img src="/img/icons/beer_.png"/></div>
+              <div id="navbar-close" class="beer-icon hide"><img src="/img/icons/delete.png"/></div>
+            </div>
         </div>
-      </a>
-      <div class="filter-container hide">
-        <form id="search-form" class="filter-input" novalidate>
-          <div class="input-row">
-            <input
-              data-pattern-mismatch="Input invalid"
-              required
-              placeholder="search by text"
-              class="input search"
-              name="filter"
-              type="text"
-              id="filter"
-            />
-        </div>
-        <div class="input-row">
-            <input
-              data-pattern-mismatch="Input invalid"
-              required
-              placeholder="search by year"
-              class="input search"
-              name="year"
-              type="text"
-              id="year"
-            />
-        </div>
-          <button type="submit" class="button search">Search</button>
-        </form>
-      </div>
-      <div class="navbar-icon">
-        <div id="navbar-search" class="beer-icon"><img src="/img/icons/beer_.png"/></div>
-        <div id="navbar-close" class="beer-icon hide"><img src="/img/icons/delete.png"/></div>
-      </div>
     </nav>
     <div id="modal-container"></div>
-    <main>
-      <!-- <div id="modal-container"></div>
-      <div class="container"> -->
-        <!-- CARD -->
-        <!-- <div class="card">
-            <div class="content-title">
-                <h2>● Beer ●</h2>
-            </div>
-            <img src="https://images.punkapi.com/v2/2.png" />
-            <div class="content-text">
-                <p>00/0000</p>
-                <p>Likes: 000</p>
-            </div>
-        </div>    -->
-        <!-- END CARD -->
-        <!-- DETAIL -->
-        
-        <!-- <div class="card-detail">
-            <div class="container-detail">
-                <div class="detail-title">
-                    <h2>● Beer ●</h2>
-                </div>
-                <img src="https://images.punkapi.com/v2/2.png" />
-                
-                <div class="date-text">
-                    <h3>First Brewed: 00/0000</h3>
-                    <h3>Likes: 00</h3>
-                </div>
-                <div class="detail-text">
-                    <h3>Yeast</h3>
-                    <hr class="separador">
-                    <p>Wyeast 1056 - American Ale™</p>
-                    <h3>Description</h3>
-                    <hr class="separador">
-                    <p>
-                        A titillating, neurotic, peroxide punk of a Pale Ale. 
-                        Combining attitude, style, substance, and a little bit of low self esteem for good measure; what would your mother say? 
-                        The seductive lure of the sassy passion fruit hop proves too much to resist. 
-                        All that is even before we get onto the fact that there are no additives, preservatives, pasteurization or strings attached. 
-                        All wrapped up with the customary BrewDog bite and imaginative twist.
-                    </p>
-                    <h3>Brewer Tips</h3>
-                    <hr class="separador">
-                    <p>
-                        Be careful not to collect too much wort from the mash. 
-                        Once the sugars are all washed out there are some very unpleasant grainy tasting compounds that can be extracted into the wort.
-                    </p>
-                    <h3>Users Comments</h3>
-                    <hr class="separador">
-                    <p class="comment-date">
-                      Date
-                    </p>
-                    <p class="comment-text">
-                        Be careful not to collect too much wort from the mash. 
-                        Once the sugars are all washed out there are some very unpleasant grainy tasting compounds that can be extracted into the wort.
-                    </p>
-                </div>
-                <div class="detail-comments">
-                    
-                    <form id="comment-form" class="comment-form" novalidate>
-                        <div class="comment-input">
-                          <textarea>Texto comentarios</textarea>
-                        </div>
-                        <button type="submit" class="button-comment">Add comment</button>
-                    </form>
-                </div>
-            </div>
-        </div> -->
-        <!-- END DETAIL -->
-      <!-- </div> -->
-      
-    </main>
-    <comments id="comments"></comments>
+    <div class="flex-container">
+      <main>
+      </main>
+      <comments id="comments"></comments>
+    </div>
     <!-- LOADER -->
     <div id="loader" class="loader-container">
       <p>Loading...</p>

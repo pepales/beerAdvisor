@@ -34,8 +34,8 @@ const commentBeerTemplate = (comment) => `
 `;
 
 const commentContainerTemplate = (comment) => `
-    <div class="container">
-        <div class="card-detail">
+    <div class="container-comments">
+        <div class="card-detail-comments">
             <div id="container-detail" class="container-detail">
                 <div class="detail-text">
                     <h3>Users Comments</h3>
@@ -74,8 +74,8 @@ const commentsRender = (element, comment) => {
     } 
 
         element.innerHTML = `
-        <div class="container">
-            <div class="card-detail">
+        <div class="container-comments">
+            <div class="card-detail-comments">
                 <div id="container-detail" class="container-detail">
                     <div class="detail-text">
                         <h3>Users Comments</h3>

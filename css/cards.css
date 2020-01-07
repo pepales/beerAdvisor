@@ -54,7 +54,14 @@
 
 /* DETAIL */
 
+
+
 .card-detail {
+    /* border: white 2px solid; */
+    width: 90%;
+}
+
+.card-detail-comments {
     /* border: white 2px solid; */
     width: 90%;
 }
@@ -145,20 +152,52 @@ hr.separador {
     height: 8vw;
 }
 
+@media (max-width:990px) {
+    .container-beerdetail {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+    
+    .container-comments {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 992px) {
+
+    .container {
+        width: 900px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+
+
     .card {
-        width: 16vw;
+        width: 160px;
         border: white 2px solid;
-        margin: 5px 2px;
+        margin: 8px 8px;
         background-color: #f8f5e4;
         position: relative;
         border-radius: 5px;
     }
 
     .card img {
-        width: 6vw;
+        width: 50px;
         position: relative;
-        left: 5vw;
+        left: 35%;
         top: 0vw;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -168,11 +207,52 @@ hr.separador {
     .card .content-title {
         background-color: #eaaa2e;
         width: 100%;
-        height: 3vw;
+        height: 2vw;
         padding-top: 20px;
         padding-bottom: 10px;
         border-bottom: #1d212d 3px solid;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
     }
+
+    .add-like {
+        font-size: 1rem;
+        width: 100px;
+        height: 30px;
+    }
+
+    .container-detail img {
+        background-color: #f8f5e4;
+        width: 114px;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 940px;
+    }
+
+    #comments {
+        margin:20px auto;
+    }
+
+    .card-detail-comments {
+        width: 100%;
+    }
+
+    .card-detail {
+        width: 100%;
+    }
+
+    .container-beerdetail {
+        width: 450px;
+    }
+
+    .container-comments {
+        width: 450px;
+    }
+
 }

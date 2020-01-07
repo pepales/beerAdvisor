@@ -6,7 +6,7 @@ const { getBeerID } = api();
 
 
 const detailBeerTemplate = ({beerId, name, image, firstBrewed, likes, contributedBy , description, brewersTips }) => `
-<div class="container">
+<div class="container-beerdetail">
     <div class="card-detail">
         <div id="container-detail" class="container-detail">
             <div class="detail-title">

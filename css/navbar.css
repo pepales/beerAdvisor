@@ -121,3 +121,107 @@ textarea {
     width:80%;
     border-bottom: white 1px solid;
 }
+
+@media (max-width:990px) {
+    .button {
+        display:none;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .beer-icon img {
+        width: 4.3vw;
+        cursor: pointer;
+        left: 11vw;
+        position: absolute;
+        top: -0.6vw;
+    }
+
+    #filter {
+        position: relative;
+        left: -29vw;
+        top: 1vw;
+    }
+
+    #year {
+        position: relative;
+        left: -11vw;
+        top: -3vw;
+    }
+    
+
+    .input {
+        width: 17vw;
+        height: 4vw;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .input-row {
+        margin: 0;
+    }
+
+    .filter-container {
+        left: 70vw;
+        top: 0vw;
+        position: absolute;
+        width: 20vw;
+    }
+
+    .button {
+        width: 10vw;
+        position: absolute;
+        top: 1vw;
+        left: 9vw;
+        border-radius: 7px;
+        height: 4vw;
+        background-color: #1d212d;
+        color: white;
+        cursor: pointer;
+        border: none;
+    }
+}
+
+@media (min-width: 1100px) {
+
+    .beer-icon img {
+        width: 53px;
+        cursor: pointer;
+        left: 44%;
+        position: absolute;
+        top: 0%;
+    }
+
+    .button {
+        width: 10vw;
+        position: absolute;
+        top: 0.5vw;
+        left: 9vw;
+        border-radius: 7px;
+        height: 4vw;
+        background-color: #1d212d;
+        color: white;
+        cursor: pointer;
+        border: none;
+    }
+
+    #year {
+        position: relative;
+        left: -11vw;
+        top: -3.6vw;
+    }
+
+    #filter {
+        position: relative;
+        left: -29vw;
+        top: 0.4vw;
+    }
+
+    .navbar-icon {
+        position: absolute;
+        left: 95%;
+        width: -11px;
+        top: 0.5%;
+    }
+}

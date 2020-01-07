@@ -144,3 +144,35 @@ hr.separador {
     width: 20vw;
     height: 8vw;
 }
+
+@media (min-width: 992px) {
+    .card {
+        width: 16vw;
+        border: white 2px solid;
+        margin: 5px 2px;
+        background-color: #f8f5e4;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .card img {
+        width: 6vw;
+        position: relative;
+        left: 5vw;
+        top: 0vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: auto;
+    }
+
+    .card .content-title {
+        background-color: #eaaa2e;
+        width: 100%;
+        height: 3vw;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-bottom: #1d212d 3px solid;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+}

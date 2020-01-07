@@ -20,11 +20,11 @@ const detailBeerTemplate = ({beerId, name, image, firstBrewed, likes, contribute
                     <button class="add-like">
                         Like 
                         <i class="fas fa-heart"></i>
-                        
+                        <span id="like-counter">${likes}</span>
                     </button>
-                    
-                </h3>
-                <h3 id="like-counter">${likes}</h3>
+                </h3>  
+                
+
             </div>
             <div class="detail-text">
                 <h3>Contributed by:</h3>

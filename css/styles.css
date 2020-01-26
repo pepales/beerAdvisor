@@ -8,13 +8,16 @@ body {
     background-color: #1d212d;
 }
 
-h1,h2,h3,p {
+h1,
+h2,
+h3,
+p {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
 main {
-    margin:20px auto;
-    
+    margin: 20px auto;
+
 }
 
 .container {
@@ -25,14 +28,32 @@ main {
     margin-bottom: 20px;
 }
 
+.picture {
+    overflow:hidden;
+}
+
+.picture img {
+    border-bottom: 2px solid white;
+}
+
 a {
     color: initial;
     text-decoration: none;
-  }
+}
 
 .warning {
     color: white;
     text-align: center;
     font-size: 2rem;
     padding: 44px;
+}
+
+@media(min-width:992px) {
+
+    .picture {
+        width: 900px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
 }

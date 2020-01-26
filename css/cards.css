@@ -232,7 +232,7 @@ hr.separador {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
-        width: 940px;
+        width: 900px;
     }
 
     #comments {
